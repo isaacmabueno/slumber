@@ -1,23 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import Button from 'antd/lib/button';
+import Hero from './components/Hero';
 import './App.css';
+import Nav from './components/Header';
 
 function App() {
   return (
     <div className="App">
+      <Nav />
+      <Hero />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <h1>Slumber</h1>
+        <Button type="primary">Button</Button>
       </header>
     </div>
   );
